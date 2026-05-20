@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.KonyaAddFamily" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">#03A9F4</item>
+         <item name="colorPrimary">#8BC34A</item>
     </style>
     <style name="CustomEditText">
         <item name="android:layout_width">match_parent</item>
