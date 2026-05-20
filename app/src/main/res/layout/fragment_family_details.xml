@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/familyDetailsLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- اسم رب الأسرة -->
+        <TextView android:id="@+id/tvFatherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اسم رب الأسرة"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <!-- رقم الهوية -->
+        <TextView android:id="@+id/tvNationalId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم الهوية" />
+
+        <!-- عدد الأفراد -->
+        <TextView android:id="@+id/tvTotalMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عدد الأفراد" />
+
+        <!-- نوع العائلة -->
+        <TextView android:id="@+id/tvFamilyType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نوع العائلة" />
+
+        <!-- زر عرض الأفراد -->
+        <Button
+            android:id="@+id/btnShowMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عرض الأفراد"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

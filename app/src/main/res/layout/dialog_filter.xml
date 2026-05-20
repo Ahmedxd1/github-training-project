@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- حقل الاسم -->
+    <EditText
+        android:id="@+id/etNameFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:background="@drawable/bg_edittext"
+        android:hint="ابحث بالاسم"
+        android:inputType="text" />
+
+    <!-- حقل رقم الهوية -->
+    <EditText
+        android:id="@+id/etIdFilter"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:hint="ابحث برقم الهوية"
+        android:inputType="number" />
+
+    <!-- حقل التعليم -->
+    <EditText
+        android:id="@+id/etEducationFilter"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"
+        android:hint="ابحث بالتعليم"
+        android:inputType="text" />
+
+    <!-- حقل العمر -->
+    <EditText
+        android:id="@+id/etAgeFilter"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_edittext"
+        android:layout_height="wrap_content"
+        android:hint="ابحث بالعمر"
+        android:layout_marginTop="10dp"
+        android:inputType="number" />
+
+    <!-- إضافة CheckBox للحالات الخاصة -->
+    <CheckBox
+        android:id="@+id/cbSickFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مريض" />
+
+    <!-- حقل نوع المرض (سيظهر فقط إذا تم تحديد "مريض") -->
+    <EditText
+        android:id="@+id/etDiseaseFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"
+        android:hint="أدخل نوع المرض"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+    android:inputType="text" />
+
+    <CheckBox
+        android:id="@+id/cbMartyrFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="شهيد" />
+
+    <CheckBox
+        android:id="@+id/cbPrisonerFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أسير" />
+
+    <CheckBox
+        android:id="@+id/cbOrphanFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="يتيم" />
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/familyScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:layoutDirection="rtl"
+    >
+
+    <LinearLayout
+        android:id="@+id/familyFormLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <!-- ===== بيانات الأب ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بيانات الأب"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etFatherName"
+            style="@style/CustomEditText"
+            android:hint="اسم رب الأسرة" />
+
+        <EditText
+            android:id="@+id/etNationalId"
+            style="@style/CustomEditText"
+            android:hint="رقم الهوية"
+            android:maxLength="9"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etBirthdate"
+            style="@style/CustomEditText"
+            android:hint="تاريخ ميلاد الأب"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/etPhonePrimary"
+          android:maxLength="10"
+            style="@style/CustomEditText"
+            android:hint="رقم الجوال الأساسي" />
+
+        <EditText
+            android:id="@+id/etPhoneSecondary"
+            android:maxLength="10"
+            style="@style/CustomEditText"
+            android:hint="رقم الجوال البديل" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الحالة الاجتماعية"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#000" />
+
+        <Spinner
+            android:id="@+id/spinnerMaritalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/marital_status_array"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp" />
+        <!-- ===== بيانات الزوجة ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بيانات الزوجة"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etWifeName"
+            style="@style/CustomEditText"
+            android:layout_marginTop="10dp"
+            android:hint="اسم الزوجة رباعي" />
+
+        <EditText
+            android:id="@+id/etWifeNationalId"
+            style="@style/CustomEditText"
+            android:maxLength="9"
+            android:hint="رقم هوية الزوجة"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etWifeBirthdate"
+            style="@style/CustomEditText"
+            android:hint="تاريخ ميلاد الزوجة"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- ===== نوع العائلة ===== -->
+        <Spinner
+            android:id="@+id/spinnerFamilyType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- ===== تفاصيل أفراد العائلة ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفاصيل أفراد العائلة"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/etTotalMembers" style="@style/CustomEditText" android:hint="عدد أفراد العائلة" android:inputType="number"/>
+        <EditText android:id="@+id/etOrphans" style="@style/CustomEditText" android:hint="عدد الأيتام" android:inputType="number"/>
+        <EditText android:id="@+id/etChronicDiseases" style="@style/CustomEditText" android:hint="عدد المرضى المزمنين" android:inputType="number"/>
+        <EditText android:id="@+id/etPregnant" style="@style/CustomEditText" android:hint="عدد الحوامل" android:inputType="number"/>
+        <EditText android:id="@+id/etBreastfeeding" style="@style/CustomEditText" android:hint="عدد المرضعات" android:inputType="number"/>
+        <EditText android:id="@+id/etInjured" style="@style/CustomEditText" android:hint="عدد الإصابات" android:inputType="number"/>
+        <EditText android:id="@+id/etMartyrs" style="@style/CustomEditText" android:hint="عدد الشهداء" android:inputType="number"/>
+        <EditText android:id="@+id/etPrisoners" style="@style/CustomEditText" android:hint="عدد الأسرى" android:inputType="number"/>
+
+        <!-- ===== توزيع الأعمار حسب الجنس ===== -->
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفصيل الأعمار حسب الجنس"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="16dp" />
+
+        <EditText            android:layout_marginTop="10dp"
+            android:id="@+id/etChildMale0_5" style="@style/CustomEditText" android:hint="0 - 5 ذكور" android:inputType="number"/>
+        <EditText android:id="@+id/etChildFemale0_5" style="@style/CustomEditText" android:hint="0 - 5 إناث" android:inputType="number"/>
+        <EditText android:id="@+id/etChildMale5_17" style="@style/CustomEditText" android:hint="5 - 17 ذكور" android:inputType="number"/>
+        <EditText android:id="@+id/etChildFemale5_17" style="@style/CustomEditText" android:hint="5 - 17 إناث" android:inputType="number"/>
+        <EditText android:id="@+id/etAdultMale17_50" style="@style/CustomEditText" android:hint="17 - 50 ذكور" android:inputType="number"/>
+        <EditText android:id="@+id/etAdultFemale17_50" style="@style/CustomEditText" android:hint="17 - 50 إناث" android:inputType="number"/>
+        <EditText android:id="@+id/etSeniorMale50plus" style="@style/CustomEditText" android:hint="أكثر من 50 ذكور" android:inputType="number"/>
+        <EditText android:id="@+id/etSeniorFemale50plus" style="@style/CustomEditText" android:hint="أكثر من 50 إناث" android:inputType="number"/>
+
+        <!-- زر الحفظ -->
+        <Button
+            android:id="@+id/btnSaveFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حفظ العائلة"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="40dp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

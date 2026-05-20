@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/membersListLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+    <!-- عنوان الصفحة -->
+    <TextView
+        android:id="@+id/tvMembersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:layout_marginBottom="12dp" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:background="?android:attr/windowBackground"
+        android:elevation="4dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnAdvancedFilter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_filter_list_alt_24"
+            android:contentDescription="Advanced Filter"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ابحث عن الفرد..."
+            android:layout_marginHorizontal="5dp"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+ <!-- RecyclerView لعرض الأفراد -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMembers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+</LinearLayout>

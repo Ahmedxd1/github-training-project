@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KonyaAddFamily</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="marital_status_array">
+        <item>متزوج</item>
+        <item>مطلق</item>
+        <item>أرمل</item>
+        <item>مهجورة</item>
+    </string-array>
+</resources>

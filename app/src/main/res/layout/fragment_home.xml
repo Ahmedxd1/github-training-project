@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F4F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 👋 الترحيب -->
+        <TextView
+            android:text="✨ مرحبًا بك في لوحة المتابعة ✨"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#37474F"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- ✅ عدد العائلات -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFamilies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layoutDirection="rtl"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="🏠 عدد العائلات:"
+                    android:textSize="18sp"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvFamilyCount"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ✅ عدد الأفراد -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layoutDirection="rtl"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="👥 عدد الأفراد:"
+                    android:textSize="18sp"
+                    android:textColor="#43A047"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvMemberCount"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#43A047"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🧩 الأزرار -->
+        <Button
+            android:id="@+id/btnAddFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ إضافة عائلة"
+            android:backgroundTint="#1E88E5"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnViewFamilies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="📋 عرض العائلات"
+            android:backgroundTint="#43A047"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnExport"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="📊 "
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
